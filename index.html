@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>parpar8090.com</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://kit.fontawesome.com/59aedcb2d8.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/init_page.js"></script>
+</head>
+
+<body>
+    <div class="content fade-in blur-out">
+        <header class="header fill-all"></header>
+
+        <section class="section fill-all" height="100%">
+            <img class="bg-image fit unselected" />
+            <div class="centered-homepage" style="top:50%;">
+                <h1>
+                    <span id="typewriter" data-array=""></span>
+                    <span class="cursor"></span>
+                </h1>
+            </div>
+            <div class="centered-homepage" style="top:70%;">
+                <a class="btn round" href="about.html" target="_self">About</a>
+                <a class="btn round" href="contact.html" target="_self">Contact</a>
+            </div>
+        </section>
+    </div>
+    <script src="js/typescript.js"></script>
+
+    <div class="loader-wrapper">
+        <span class="loader"><span class="loader-inner"></span></span>
+    </div>
+
+    <script>
+        $(window).on("load", function() {
+            $(".loader-wrapper").fadeOut("slow");
+        });
+    </script>
+    <script>
+        $(window).mousemove(function(e) {
+            //width = 1920 height = 1080
+            var moveX = (window.innerWidth / 2 - e.clientX) / 15;
+            var moveY = (window.innerHeight / 2 - e.clientY) / 15 + 75;
+            $(".bg-image").css('background-position', moveX + 'px ' + moveY + 'px')
+        });
+    </script>
+</body>
+
+</html>

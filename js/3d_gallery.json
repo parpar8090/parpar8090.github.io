@@ -1,0 +1,9 @@
+{
+    "1": {
+        "title": "Floating Island",
+        "description": "Floating Island",
+        "favorite": true,
+        "image_url": "/assets/background.png",
+        "sell": ["", ""]
+    }
+}
