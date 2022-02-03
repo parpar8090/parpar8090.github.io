@@ -3,7 +3,23 @@
         "title": "Floating Island",
         "description": "Floating Island",
         "favorite": true,
-        "image_url": "/assets/background.png",
+        "image_url": "../assets/3d/floating_island.png",
+        "sell": ["https://www.shutterstock.com/image-illustration/fantasy-wildlife-floating-island-3d-rendering-1938891343",
+            "https://stock.adobe.com/il/images/fantasy-wildlife-floating-island/421392480"
+        ]
+    },
+    "2": {
+        "title": "Galaxy",
+        "description": "Galaxy",
+        "favorite": false,
+        "image_url": "../assets/3d/galaxy.png",
+        "sell": []
+    },
+    "3": {
+        "title": "Rocks",
+        "description": "Rocks",
+        "favorite": true,
+        "image_url": "../assets/3d/rocks.png",
         "sell": ["", ""]
     }
 }
