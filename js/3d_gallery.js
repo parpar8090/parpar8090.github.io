@@ -15,26 +15,60 @@ function createGalleryFromJSON(req) {
 
     const cols = 4;
     var keys = Object.keys(jsonData);
-    var size = (keys.length / cols);
+    var size = keys.length;
+    let rows = size;
 
-    for (let rows = 0; rows < size; rows++) {
-        var row = `<div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4" id="${rows}"></div>`;
-        $('.gallery').append(row);
+    //todo zoomable images
 
-        for (let col = 1; col < (rows + 1) * cols; col++) {
-            var i = col * (rows + 1);
-            jsonItem = jsonData[keys[i - 1]];
+    for (let i = 0; i < size; i++) {
+        jsonItem = jsonData[keys[i]];
+
+        var element =
+            `<div class="col gallery-item" id="${i}"><div class="card h-100">
+                <div class="card-img-div">
+                    <img src="${jsonItem.image_url}" class="gallery-img card-img-top" alt="${jsonItem.title}"/>
+                </div>
+                <h3 class="card-title">${jsonItem.title}</h3>
+                <div class="card-body">
+                    <p class="card-text">${jsonItem.description}</p>
+                </div>
+            </div></div>`;
+
+        $(`.gallery`).append(element);
+
+        if (jsonItem.favorite) {
+            fav = `<span style="position: relative;"><i class="fas fa-star"></i></span>`;
+            $(`#${i}.gallery-item.card`).append(fav);
+        }
+    }
+
+    /*for (let row = 0; row < rows; row++) {
+        var rowEl = `<div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4" id="row-${row}"></div>`;
+        $('.gallery').append(rowEl);
+
+        for (let col = 0; col < cols; col++) {
+            var i = row * cols + col;
+            jsonItem = jsonData[keys[i]];
+
+            console.log(col, i, cols, row);
 
             var element =
-                `<div class="col gallery-item"><div class="card h-100">
-                    <img src="${jsonItem.image_url}" class="card-img-top" alt="${jsonItem.title}" />
+                `<div class="g-col-6 gallery-item" id="col-${i}"><div class="card h-100">
+                    <div class="card-img-div">
+                        <img src="${jsonItem.image_url}" class="card-img-top" alt="${jsonItem.title}"/>
+                    </div>
                     <h3 class="card-title">${jsonItem.title}</h3>
                     <div class="card-body">
                         <p class="card-text">${jsonItem.description}</p>
                     </div>
                 </div></div>`;
 
-            $(`#${rows}.row`).append(element);
+            $(`#row-${row}.row`).append(element);
+
+            if (jsonItem.favorite) {
+                fav = `<span><i class="fas fa-star"></i></span>`;
+                $(`#row-${row}#col-${i}.card-img-div`).append(fav);
+            }
         }
-    }
+    }*/
 };

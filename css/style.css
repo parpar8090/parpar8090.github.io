@@ -458,11 +458,10 @@ div.gallery-item {
 /* div.gallery-item:hover {
 } */
 
-
-/* div.gallery-item img {
-    width: 100%;
+.gallery-img:hover {
+    width: 150%;
     height: auto;
-} */
+}
 
 div.gallery .desc {
     padding: 15px;
