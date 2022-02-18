@@ -49,5 +49,33 @@
         "favorite": false,
         "image_url": "../assets/3d/Snowy_Mountains.png",
         "sell": []
+    },
+    "8": {
+        "title": "Donut",
+        "description": "My first ever project in blender! Followed Blender Guru's tutorial",
+        "favorite": false,
+        "image_url": "../assets/3d/donut.png",
+        "sell": []
+    },
+    "9": {
+        "title": "Space Wallpaper",
+        "description": "A wallpaper for my computer, spanning across 2 monitors.",
+        "favorite": false,
+        "image_url": "../assets/3d/space_wallpaper.png",
+        "sell": []
+    },
+    "10": {
+        "title": "Chess",
+        "description": "My 2nd ever Blender project, was practicing modeling skills.",
+        "favorite": false,
+        "image_url": "../assets/3d/chess_game.png",
+        "sell": []
+    },
+    "11": {
+        "title": "Epistation",
+        "description": "A background for my computer, Epistation",
+        "favorite": false,
+        "image_url": "../assets/3d/Epistation1.png",
+        "sell": []
     }
 }
