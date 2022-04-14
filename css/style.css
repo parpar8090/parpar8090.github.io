@@ -1,12 +1,4 @@
-/* Color Scheme:
-    #0B132B
-    #1C2541
-    #2C415B
-    #5BC0BE
-    #6FFFE9
-*/
-
-@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2&family=Courier+Prime&family=Special+Elite&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2&family=Courier+Prime&family=Montserrat&family=Special+Elite&display=swap');
 
 /* ==== Variables ==== */
 
@@ -31,6 +23,9 @@ body {
     color: var(--font-color);
     margin: 0;
     padding: 0;
+    font-family: 'Baloo Bhaijaan 2', sans-serif;
+    min-height: 100%;
+    position: relative;
 }
 
 .navbar {
@@ -74,15 +69,24 @@ hr {
 
 /* ==== Page ==== */
 
-.header {
-    margin-bottom: 100px;
-}
-
 .section {
     margin: 0 10rem;
     border-radius: 7px;
     padding: 50px;
     justify-content: center !important;
+}
+
+main,
+.content {
+    margin-top: 100px;
+}
+
+.container {
+    background-color: var(--content-background);
+    border-radius: 10px;
+    margin-top: 50px;
+    padding: 20px 30px 20px 30px;
+    box-shadow: 0px 0px 20px var(--content-background);
 }
 
 .container-header {
@@ -161,13 +165,14 @@ div.center {
     margin-right: 10px;
 }
 
-p {
+p,
+li {
     font-size: 1.5rem;
 }
 
 a {
     text-decoration: underline;
-    color: #6e97c2;
+    color: #9cc4b0;
 }
 
 a:hover {
@@ -214,12 +219,34 @@ a.navbar-brand:hover {
     box-shadow: 0 0 20px 5px #2C415B;
 }
 
+.sec-btn {
+    background-color: var(--font-color);
+    color: var(--shadow);
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    box-shadow: 0 0 10px var(--font-color);
+    margin: 10px 10px;
+}
+
+.sec-btn:hover {
+    color: var(--sec-color);
+    background-color: var(--hover-color);
+    transition: 0.2s;
+    box-shadow: 0 0 20px 5px #2C415B;
+}
+
 
 /* ==== Header / Navbar ==== */
 
 header {
-    width: 100%;
+    margin-bottom: 10px;
 }
+
+
+/* .navbar {
+    margin-bottom: 100px;
+} */
 
 .navbar-brand {
     color: var(--font-color);
@@ -340,7 +367,7 @@ div.copy-text button {
     padding: 10px;
     background: var(--font-color);
     color: var(--content-background);
-    border-radius: 10px;
+    border-radius: 9px;
     cursor: pointer;
 }
 
@@ -458,9 +485,18 @@ div.gallery-item {
 /* div.gallery-item:hover {
 } */
 
+.gallery-img {
+    position: relative;
+    object-fit: contain;
+    transition: 0.5s ease;
+}
+
 .gallery-img:hover {
-    width: 150%;
-    height: auto;
+    transform: scale(1.75);
+}
+
+.card-img-div {
+    overflow: hidden;
 }
 
 div.gallery .desc {
@@ -498,6 +534,23 @@ div.gallery .desc {
     width: 1px;
     height: 1;
     background-color: #5BC0BE;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+ ::-webkit-scrollbar-track {
+    visibility: hidden;
+}
+
+ ::-webkit-scrollbar-thumb {
+    background: var(--font-color);
+    border-radius: 25px;
+}
+
+ ::-webkit-scrollbar-thumb:hover {
+    background: var(--hover-color);
 }
 
 

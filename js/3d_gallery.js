@@ -36,10 +36,10 @@ function createGalleryFromJSON(req) {
 
         $(`.gallery`).append(element);
 
-        if (jsonItem.favorite) {
+        /*if (jsonItem.favorite) {
             fav = `<span style="position: relative;"><i class="fas fa-star"></i></span>`;
             $(`#${i}.gallery-item.card`).append(fav);
-        }
+        }*/
     }
 
     /*for (let row = 0; row < rows; row++) {

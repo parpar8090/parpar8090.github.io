@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact me on Discord parpar#1570 or Email">
+    <meta name="keywords" content="Contact, Contact Me, parpar8090">
+    <meta name="author" content="parpar8090">
     <title>Contact - parpar8090.com</title>
     <link rel="shortcut icon" type="image/jpg" href="assets/logo.png" />
     <!-- CSSs -->
@@ -12,53 +15,61 @@
     <link rel="stylesheet" href="css/style.css">
     <!-- JSs-->
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-    <script src="https://kit.fontawesome.com/59aedcb2d8.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/846f55c101.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="js/init_page.js"></script>
 </head>
 
 <body>
     <!-- Body -->
-    <div class="content fade-in">
-        <header class="header"></header>
+    <div class="fade-in">
+        <div class="navbar"></div>
 
-        <section class="container-xxlg">
-            <h1 style="font-size: 3.5rem;">Contact Me</h1>
+        <div class="content">
+            <header>
+                <h1 style="font-size: 3.5rem; display: none;">Contact Me</h1>
+                <h1 style="font-size: 3.5rem;">Let's Talk</h1>
+            </header>
 
-            <div class="container" style="font-size: 2rem;">
-                <h1 style="color: #5865F2;">Discord <span style="text-shadow: none; color: #5865F2"><i class="fab fa-discord"></i></span></h1>
+            <div class="container-xxlg">
+                <section class="center container" style="font-size: 2rem; display: flex; flex-direction: column; align-items: center;">
+                    <div>
+                        <h2 style="text-shadow: 0 0 20px #5865F2; color: #5865F2;">Discord <span style="color: #5865F2"><i class="fab fa-discord"></i></span></h2>
 
-                <p>If you want to talk, I recommend to talk over <a href="https://discord.com/" target="_blank">Discord</a>, I use it most of my time so there's less chance to miss your messages!</p>
-                <p><span style="color: var(--warning)">Note:</span> You may need to add me as your friend before we can talk, if you don't know how I suggest you to <a class="link" href="https://www.remote.tools/remote-work/how-to-dm-someone-on-discord"
-                        target="_blank">read this article</a>.</p>
+                        <p>If you want to talk, you can message me on <a href="https://discord.com/" target="_blank">Discord</a>. I prefer it because I can respond quickly and there's less chance for me to miss your messages!</p>
+                    </div>
+                    <div class="copy-text" style="margin-top: 50px;">
+                        <input type="text" readonly="true" class="text" value="parpar#1570">
+                        <button type="button" class="btn centered btn-copy js-tooltip js-copy" data-toggle="tooltip" data-placement="top" data-copy="parpar#1570" title="Copy to clipboard"><i class="fas fa-clone"></i></button>
+                    </div>
 
-                <span style="color: var(--hover-color);">My Discord Username: </span>
-                <div class="copy-text">
-                    <input type="text" readonly="true" class="text" value="parpar#1370">
-                    <button type="button" class="btn centered btn-copy js-tooltip js-copy" data-toggle="tooltip" data-placement="top" data-copy="parpar#1370" title="Copy to clipboard"><i class="fas fa-clone"></i></button>
-                </div>
+                    <div style="background-color: var(--hover-bg); border-radius: 10px;" class="container">
+                        <p style="color: var(--warning)"><span><strong>Important! </strong>You may need to add me as your friend before we can talk, if you don't know how I suggest you to <a class="link" href="https://www.remote.tools/remote-work/how-to-dm-someone-on-discord#how-to"
+                            target="_blank" style="color: var(--warning)">read this article</a></span>.</p>
+                    </div>
+                </section>
+
+                <section class="container">
+                    <h2>Email Me</h2>
+                    <p class="centered">Discord not for you? No worries, you can e-mail!</p>
+                    <form action="mailto:parpar.lego@gmail.com">
+                        <label for="fname">Email</label>
+                        <input type="text" required="true" id="email" name="email" placeholder="Your email...">
+
+                        <label for="fname">Name or Nickname</label>
+                        <input type="text" required="true" id="name" name="name" placeholder="No need for real name :)">
+
+                        <label for="subject">Title</label>
+                        <input type="text" required="true" id="subject" name="subject" placeholder="The subject..."></input>
+
+                        <label for="message">Content</label>
+                        <textarea id="message" required="true" name="message" placeholder="Write something..." style="height:80px"></textarea>
+
+                        <input type="submit" value="Submit">
+                    </form>
             </div>
-
-            <h1>Email Me</h1>
-            <p class="centered">Discord not for you? No worries, you can e-mail me too!</p>
-            <div class="container">
-                <form action="mailto:parpar.lego@gmail.com">
-                    <label for="fname">Email</label>
-                    <input type="text" required="true" id="email" name="email" placeholder="Your email...">
-
-                    <label for="fname">Name or Nickname</label>
-                    <input type="text" required="true" id="email" name="email" placeholder="No need for real name :)">
-
-                    <label for="subject">Title</label>
-                    <input type="text" required="true" id="subject" name="subject" placeholder="The subject..."></input>
-
-                    <label for="message">Content</label>
-                    <textarea id="message" required="true" name="message" placeholder="Write something..." style="height:200px"></textarea>
-
-                    <input type="submit" value="Submit">
-                </form>
-            </div>
-        </section>
+            </section>
+        </div>
 
         <footer class="footer"></footer>
     </div>

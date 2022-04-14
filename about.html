@@ -11,47 +11,52 @@
     <link rel="stylesheet" href="css/style.css">
     <!-- JSs-->
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-    <script src="https://kit.fontawesome.com/59aedcb2d8.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/846f55c101.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="js/init_page.js"></script>
 </head>
 
 <body>
     <!-- Body -->
-    <div class="content fade-in">
-        <header class="header"></header>
+    <div class="fade-in">
+        <div class="navbar" style="z-index: 2;"></div>
 
-        <section class="container-lg">
+        <main class="container-lg">
             <h1 style="font-size: 3.5rem;">About Me</h1>
-            <hr>
-            <p>I'm 15 years old that lives in North America, I'm a developer, 3D artist and a freelancer. I mainly work with the <a class="link" href="https://www.spigotmc.org/wiki/spigot/" target="_blank">Spigot API</a> to make custom plugins for Minecraft
-                Servers.
-            </p>
-            <h3 style="font-size: 2rem;">My history - As a Developer</h3>
-            <p>I began learning how to code HTML, CSS, and JavaScript around the year 2018.</p>
-            <p>After making a little website, I stopped and moved into making a small Minecraft Server named Wisel Network</p>
-            <p>Then in 2019, I wanted to code custom plugins to make my server cooler, so I started learning Java and the <a class="link" href="https://www.spigotmc.org/wiki/spigot/" target="_blank">Spigot API</a>.</p>
-            <p>I also learned how to use GitHub and the BungeeCord API, which is very simillar to the Spigot-MC API.</p>
-            <p>Right now, I'm improving my MySQL skills as well as learning Redis</p>
-            <p>I forgot to mention, but this website was made by me.</p>
-            <p>I didn't do a lot of public projects, but I'm open to do some.</p>
-            <div class="centered">
-                <a style="margin-top: 50px; color: #f5f5f5" class="btn round" href="https://github.com/parpar8090/">My GitHub<span style="margin-left: 10px;"><i class="fab fa-github"></i></span></a>
-                <!-- COMING SOON -->
-                <!-- <a style="margin-top: 100px;" class="btn round" href="#" target="_self">Coding Projects</a>
-                <a style="margin-top: 100px;" class="btn round" href="#" target="_self">Other Projects</a> -->
+            <div class="container-lg container">
+                <p>I'm 15 years old that lives in Canada, I'm a developer, 3D artist and I do freelancing. Most of the time I make custom plugins for Minecraft Servers.</p>
             </div>
-            <h3 style="font-size: 2rem;">My history - As a 3D artist</h3>
-            <p>In 2020, I discovered the free software called Blender that makes computer-generated 3D images and animations.</p>
-            <p>During that year, I made and finished 8 public projects, with some others unfinished.</p>
-            <p>I'm continueing making more 3D projects and hope to challenge myself by freelancing.</p>
-            <div class="centered">
-                <a style="margin-top: 50px;" class="btn round" href="3d.html" target="_self">My 3D Projects</a>
-                <!-- COMING SOON -->
-                <!-- <a style="margin-top: 100px;" class="btn round" href="#" target="_self">Coding Projects</a>
-                <a style="margin-top: 100px;" class="btn round" href="#" target="_self">Other Projects</a> -->
+            <p class="centered" style="margin-top: 50px; font-size: 2rem;"><i class="fa-brands fa-canadian-maple-leaf" style="color: red;"></i></p>
+
+            <section class="container-lg container">
+                <h2 style="font-size: 2rem;" id="1"><i class="fa-solid fa-microchip" style="color: #92c5ec"></i> As a Developer</h2>
+                <ul style="list-style:none; vertical-align: baseline;">
+                    <li><i class="fa-solid fa-code" style="color: #a0f5ac;"></i> I learned HTML, CSS, and JavaScript around the year 2018.</li>
+                    <li><i class="fa-solid fa-plug" style="color: #a0f5ac;"></i> I develop in Java and use the <a class="link" href="https://www.spigotmc.org/wiki/spigot/" target="_blank">Spigot API</a> to create custom plugins for Minecraft servers.</li>
+                    <li>I have 3 years of experience with Java and development of Minecraft servers (since 2019).</li>
+                    <li><i class="fa-solid fa-database" style="color: #a0f5ac;"></i> I'm improving my MySQL and Redis skills.</li>
+                    <li>This website was developed by me using written code.</li>
+                </ul>
+                <!-- todo: fancy icons -->
+                <div class="centered">
+                    <a style="margin-top: 50px; color: #f5f5f5" class="btn round" href="https://github.com/parpar8090/">See My Coding Projects<span style="margin-left: 5px;"><i class="fab fa-github"></i></span></a>
+                </div>
+            </section>
+            <section class="container-lg container">
+                <h2 style="font-size: 2rem;"><i class="fa-solid fa-palette" style="color: transparent; text-shadow: none; -webkit-background-clip: text; background-image: red; background-image: -webkit-linear-gradient(45deg,rgba(255, 0, 0, 1) 0%,rgba(255, 154, 0, 1) 10%,rgba(208, 222, 33, 1) 20%,rgba(79, 220, 74, 1) 30%,rgba(63, 218, 216, 1) 40%,rgba(47, 201, 226, 1) 50%,rgba(28, 127, 238, 1) 60%,rgba(95, 21, 242, 1) 70%,rgba(186, 12, 248, 1) 80%,rgba(251, 7, 217, 1) 90%,rgba(255, 0, 0, 1) 100%);"></i>                    As an artist</h2>
+                <ul style="list-style:none; vertical-align: baseline;">
+                    <li>I focus on creating computer-generated art but especially 3D art where everything should look realistic and can have a lot of fantasy.</li>
+                    <li>I made several big projects that can be found <a href="3d.html" target="_self">here</a></li>
+                    <li>I have experience with 3D art for 1 year now (since summer of 2020).</li>
+                </ul>
+                <div class="centered">
+                    <a style="margin-top: 50px;" class="btn round" href="3d.html" target="_self">See My 3D Projects</a>
+                </div>
+            </section>
+            <div class="centered" style="margin-top: 50px">
+                <a class="sec-btn btn round" style="font-size: 2rem; padding-left:25px; padding-right:25px;" href="contact.html" target="_self">Contact</a>
             </div>
-        </section>
+        </main>
 
         <footer class="footer"></footer>
     </div>

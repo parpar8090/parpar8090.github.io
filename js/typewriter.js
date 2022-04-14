@@ -22,10 +22,13 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
 DEALINGS IN THE SOFTWARE.
 */
 
+// The typewriter element
+var typeWriterElement = document.getElementById('typewriter');
+
 // You can also do this by transfering it through a data-attribute
-// var textArray = typeWriterElement.getAttribute('data-array');
+var textArray = JSON.parse(typeWriterElement.getAttribute('data-array'));
 // The TextArray: 
-var textArray = [
+/* var textArray = [
     "I'm parpar8090",
     "I'm a developer",
     "I'm a 3D Artist",
@@ -33,9 +36,7 @@ var textArray = [
     "I play Minecraft",
     "I'm a freelancer",
     "Want to hire me?"
-];
-// The typewriter element
-var typeWriterElement = document.getElementById('typewriter');
+]; */
 
 // function to generate the backspace effect 
 function delWriter(text, i, cb) {
