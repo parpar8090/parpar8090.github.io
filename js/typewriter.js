@@ -38,6 +38,8 @@ var textArray = JSON.parse(typeWriterElement.getAttribute('data-array'));
     "Want to hire me?"
 ]; */
 
+const speed = 1;
+
 // function to generate the backspace effect 
 function delWriter(text, i, cb) {
     if (i >= 0) {
@@ -48,7 +50,7 @@ function delWriter(text, i, cb) {
             delWriter(text, i, cb);
         }, rndBack);
     } else if (typeof cb == 'function') {
-        setTimeout(cb, 1000);
+        setTimeout(cb, 500);
     }
 };
 
@@ -73,7 +75,7 @@ function StartWriter(i) {
     if (typeof textArray[i] == "undefined") {
         setTimeout(function() {
             StartWriter(0)
-        }, 1000);
+        }, speed);
     } else if (i < textArray[i].length + 1) {
         typeWriter(textArray[i], 0, function() {
             StartWriter(i + 1);
@@ -83,4 +85,4 @@ function StartWriter(i) {
 // wait one second then start the typewriter
 setTimeout(function() {
     StartWriter(0);
-}, 1000);
+}, speed);

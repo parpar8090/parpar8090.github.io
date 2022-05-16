@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2&family=Courier+Prime&family=Montserrat&family=Special+Elite&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2&family=Courier+Prime&family=Montserrat&family=Sora:wght@500&family=Special+Elite&display=swap');
 
 /* ==== Variables ==== */
 
@@ -23,7 +23,7 @@ body {
     color: var(--font-color);
     margin: 0;
     padding: 0;
-    font-family: 'Baloo Bhaijaan 2', sans-serif;
+    font-family: 'Sora', sans-serif;
     min-height: 100%;
     position: relative;
 }
@@ -149,7 +149,7 @@ div.center {
     border-bottom: 5px solid var(--sec-bg);
     padding-right: 40px;
     padding-top: 100px;
-    font-size: 4rem;
+    /* font-size: 4rem; */
     animation: cursor-flash 1s infinite;
 }
 
@@ -168,7 +168,7 @@ div.center {
 
 p,
 li {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
 }
 
 a {
@@ -206,12 +206,12 @@ a.navbar-brand:hover {
 }
 
 .btn {
-    background-color: #00B2F1;
+    background-color: #201f30;
     color: var(--sec-color);
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    box-shadow: 0 0 10px #00B2F1;
+    box-shadow: 0 0 10px #201f30;
     margin: 10px 10px;
 }
 
