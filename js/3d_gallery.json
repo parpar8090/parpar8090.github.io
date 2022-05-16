@@ -59,7 +59,7 @@
     },
     "9": {
         "title": "Space Wallpaper",
-        "description": "A wallpaper for my computer, spanning across 2 monitors.",
+        "description": "A nice wide wallpaper.",
         "favorite": false,
         "image_url": "../assets/3d/space_wallpaper.png",
         "sell": []
@@ -69,13 +69,6 @@
         "description": "My 2nd ever Blender project, was practicing modeling skills.",
         "favorite": false,
         "image_url": "../assets/3d/chess_game.png",
-        "sell": []
-    },
-    "11": {
-        "title": "Epistation",
-        "description": "A background for my computer, Epistation",
-        "favorite": false,
-        "image_url": "../assets/3d/Epistation1.png",
         "sell": []
     }
 }
